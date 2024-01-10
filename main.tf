@@ -32,6 +32,12 @@ resource "ncloud_access_control_group_rule" "develop_bastion_acg" {
     description = "accept 22 port(all ip)"
   }
   inbound {
+    protocol    = "TCP"
+    ip_block    = "0.0.0.0/0"
+    port_range  = "3306"
+    description = "accept 3306 port(all ip)"
+  }
+  inbound {
     protocol    = "UDP"
     ip_block    = "0.0.0.0/0"
     port_range  = "1194"
