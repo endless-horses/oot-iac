@@ -1,0 +1,10 @@
+### Terraform ###
+/.terraform
+.terraform.*
+/terraform.tfstate
+/terraform.tfstate.*
+/terraform.tfvars
+
+### Server Secret ###
+*.pem
+*.txt
